@@ -8,16 +8,21 @@ body {
 
 
 .header {
-    width: 375px;
+    width: 100%;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
     background-color: #ffffff;
 }
 .conteudo-header{
-    width: 331px;
+    width: 100%;
     height: 53px;
     
     display: flex;
@@ -35,12 +40,13 @@ body {
 }
 
 .footer {
-    width: 375px;
+    width: 100%;
     height: 80px;
 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 2;
 
     display: flex;
     justify-content: center;
@@ -55,6 +61,10 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.botao {
+    background-color: #ffffff;
+    border: none;
+}
 .conteudo-footer img {
     width: 26px;
     height: 26px;
@@ -64,3 +74,53 @@ input {
     height: 30px;
     border: none;
 }
+
+.conteudo {
+    min-width: 100%;
+    height: auto;
+    margin-top: 106px;
+    margin-bottom: 106px;
+    background-color: #e5e5e5;
+}
+.div_mensagem {
+    min-width: 100%;
+    min-height: 40px;
+    padding: 14px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+.div_privado {
+    background-color: #FFDEDE;
+}
+
+span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.msgTime {
+    color: #AAAAAA;
+}
+
+.msgText {
+    font-weight: 400;
+    word-break: break-all;
+}
+.msgFrom {
+    font-weight: 700;
+}
+.messageText {
+    word-break: break-all;
+    font-weight: 400;
+}
+
