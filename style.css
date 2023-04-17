@@ -37,6 +37,8 @@ body {
 .perfis{
     width: 42px;
     height: 31px;
+    background: #ffffff;
+    border: none;
 }
 
 .footer {
@@ -119,8 +121,50 @@ span {
 .msgFrom {
     font-weight: 700;
 }
-.messageText {
-    word-break: break-all;
-    font-weight: 400;
+.msgNormal{
+    min-width: 100%;
+    min-height: 40px;
+    padding: 14px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+.msgStatus {
+    min-width: 100%;
+    min-height: 40px;
+    padding: 14px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    
+    background-color: #dcdcdc;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+.msgPrivate {
+    min-width: 100%;
+    min-height: 40px;
+    padding: 14px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    
+    background-color: #FFDEDE;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
 }
 

@@ -16,7 +16,7 @@
     <div class="header">
         <div class="conteudo-header">
             <img class= "logo" src="./imagens/logo.svg" alt="logo">
-            <img class= "perfis" src="./imagens/Vector.svg" alt="perfis">
+            <button class= "perfis" onclick="menuLateral()"><img src="./imagens/Vector.svg" alt="perfis"></button>
         </div>
     </div>
     <div class="container">
@@ -28,8 +28,8 @@
     </div>
     <div class="footer">
         <div class="conteudo-footer">
-            <input type="text" id="name" name="input" placeholder="Escreva aqui...">
-            <button onclick="enviarMensagem()" class="botao"><img src="./imagens/Vector (1).svg" alt="enviar"></button>
+            <input type="text" id="name" name="input" placeholder="Escreva aqui..." data-test="input-message">
+            <button onclick="sendMessage()" class="botao"><img src="./imagens/Vector (1).svg" alt="enviar" data-test="send-message"></button>
         </div>
     </div>
     
